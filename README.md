@@ -87,16 +87,13 @@ def recommend(movie_title):
     # Return top 5 similar movies
     return movies.iloc[indices[0][1:6]]
 ## 🌐 System Architecture
-┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-│   React     │ ←→ │   Flask     │ ←→ │   TMDB     │
-│  Frontend   │    │  Backend    │    │   API      │
-└─────────────┘    └─────────────┘    └─────────────┘
-                        │
-                        ↓
-                ┌─────────────┐
-                │   KNN       │
-                │  Model      │
-                └─────────────┘
+```markdown
+```mermaid
+graph LR
+    A[React Frontend] --> B[Flask Backend]
+    B --> C[TMDB API]
+    B --> D[KNN Model]
+```
 ## 📈 Performance Metrics
 Recommendation Accuracy: 82% user satisfaction in testing
 
