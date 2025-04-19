@@ -47,37 +47,37 @@ A content-based movie recommendation system leveraging **K-Nearest Neighbors (KN
 
 ### Install Python dependencies:
 bash
-pip install -r requirements.txt'
+pip install -r requirements.txt
 
-###Set up frontend:
+### Set up frontend:
 bash
 cd frontend
 npm install
-###Configure environment variables:
+### Configure environment variables:
 bash
 echo "TMDB_API_KEY=your_api_key_here" > .env
-##🚀 Running the System
-###Start backend:
+## 🚀 Running the System
+### Start backend:
 bash
 python app.py
-###Start frontend (in separate terminal):
+### Start frontend (in separate terminal):
 bash
 cd frontend
 npm start
 Access at: http://localhost:3000
 
-##🧠 Machine Learning Pipeline
+## 🧠 Machine Learning Pipeline
 Feature Engineering:
 Combined overview, genres, keywords, cast, and crew into tags
 
 Applied TF-IDF vectorization (max_features=5000)
 
-##Model Training:
+### Model Training:
 KNN algorithm with cosine similarity metric
 
 Optimal k=5 neighbors selected through testing
 
-##Recommendation Process:
+### Recommendation Process:
 python
 def recommend(movie_title):
     # Get movie index
@@ -86,7 +86,7 @@ def recommend(movie_title):
     distances, indices = model.kneighbors(tfidf_matrix[idx])
     # Return top 5 similar movies
     return movies.iloc[indices[0][1:6]]
-##🌐 System Architecture
+## 🌐 System Architecture
 ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
 │   React     │ ←→ │   Flask     │ ←→ │   TMDB     │
 │  Frontend   │    │  Backend    │    │   API      │
@@ -97,14 +97,14 @@ def recommend(movie_title):
                 │   KNN       │
                 │  Model      │
                 └─────────────┘
-##📈 Performance Metrics
+## 📈 Performance Metrics
 Recommendation Accuracy: 82% user satisfaction in testing
 
 Response Time: <1.5s for recommendations
 
 Scalability: Handles 100+ concurrent users
 
-##🔍 SEO-Optimized Keywords
+## 🔍 SEO-Optimized Keywords
 "Content-based movie recommender system"
 
 "KNN algorithm for movie recommendations"
@@ -117,10 +117,10 @@ Scalability: Handles 100+ concurrent users
 
 "Movie similarity visualization PCA"
 
-##📜 License
+## 📜 License
 MIT License - Open for academic and commercial use
 
-##🤝 Contributing
+## 🤝 Contributing
 Fork the repository
 
 Create your feature branch (git checkout -b feature/AmazingFeature)
@@ -131,7 +131,7 @@ Push to the branch (git push origin feature/AmazingFeature)
 
 Open a Pull Request
 
-##✉️ Contact
+## ✉️ Contact
 For questions or collaborations: juni.xatti@gmail.com
 
 ⭐ If you find this project useful, please star it on GitHub!
