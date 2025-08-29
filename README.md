@@ -40,8 +40,8 @@ A content-based movie recommendation system leveraging **K-Nearest Neighbors (KN
 
 ### Prerequisites
 - Python 3.9+
-- Node.js 16+ (for frontend)
-- TMDB API key (free tier available)
+- Node.js (for frontend)
+- TMDB API key 
 
 ## 💻 Installation & Setup
 
@@ -75,7 +75,7 @@ Applied TF-IDF vectorization (max_features=5000)
 ### Model Training:
 KNN algorithm with cosine similarity metric
 
-Optimal k=5 neighbors selected through testing
+Optimal k=5 to 8 neighbors selected through testing
 
 ### Recommendation Process:
 python
@@ -115,7 +115,7 @@ Scalability: Handles 100+ concurrent users
 "Movie similarity visualization PCA"
 
 ## 📜 License
-MIT License - Open for academic and commercial use
+MIT License - Open for academic use
 
 ## 🤝 Contributing
 Fork the repository
