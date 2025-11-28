@@ -78,7 +78,7 @@ KNN algorithm with cosine similarity metric
 Optimal k=5 to 8 neighbors selected through testing
 
 ### Recommendation Process:
-python
+```python
 def recommend(movie_title):
     # Get movie index
     idx = indices[movie_title]
@@ -86,6 +86,7 @@ def recommend(movie_title):
     distances, indices = model.kneighbors(tfidf_matrix[idx])
     # Return top 5 similar movies
     return movies.iloc[indices[0][1:6]]
+```
 ## 🌐 System Architecture
 ```markdown
 ```mermaid
