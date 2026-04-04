@@ -132,5 +132,6 @@ Open a Pull Request
 ## ✉️ Contact
 For questions or collaborations: juni.xatti@gmail.com
 
+
 ⭐ If you find this project useful, please star it on GitHub!
 
